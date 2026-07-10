@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    int a1 = 0, a2 = 1;
+    int n, next;
+
+    printf("Please enter how many terms you need in the series: ");
+    scanf("%d", &n);
+
+    printf("Fibonacci series: ");
+
+    for (int i = 1; i <= n; i++) {
+        printf("%d \n ", a1);
+
+        next = a1 + a2;
+        a1 = a2;
+        a2 = next;
+    }
+
+    return 0;
+}
